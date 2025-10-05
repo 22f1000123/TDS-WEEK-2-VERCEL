@@ -28,7 +28,7 @@ jobs:
             cache-
 
       - name: Echo cache result
-        run: echo "Cache hit: ${{ steps.cache.outputs.cache-hit }}"
+        run: echo "Cache hit:${{ steps.cache.outputs.cache-hit }}"
 
       - name: Install dependencies
         run: npm install
